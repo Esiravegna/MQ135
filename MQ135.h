@@ -26,17 +26,17 @@ v1.0 - First release
 /// R0 for AIR
 #define r0Air 1
 /// R0 for CO **measured with 24hrs of exposure**
-#define r0CO 69.65
+#define r0CO 27.09
 /// R0 for CO2 **realized 24 hrs of exposure**
-#define r0CO2 553.232
+#define r0CO2 213.93
 /// R0 for Ethanol **measured with 24hrs of exposure**
-#define r0Ethanol 240.293
+#define r0Ethanol 91.33
 /// R0 for Ammonium **measured with 24hrs of exposure**
-#define r0NH4 164.8282
+#define r0NH4 62.84
 /// R0 for Toluene **measured with 24hrs of exposure**
-#define r0Toluene 130.726
+#define r0Toluene 61.69
 /// R0 for Acetone **measured with 24hrs of exposure**
-#define r0Acetone 224.6261
+#define r0Acetone 111.38
 /// Parameters Equation for CO
 #define scaleFactorCO 662.9382
 #define exponentCO 4.0241
@@ -84,39 +84,39 @@ class MQ135 {
   void begin();
 
   float getResistance() const;
-  
+
   float getCOPPM() const;
   float getCO2PPM() const;
   float getEthanolPPM() const;
   float getNH4PPM() const;
   float getToluenePPM() const;
   float getAcetonePPM() const;
-  
+
   float getRZeroCO() const;
   float getRZeroCO2() const;
   float getRZeroEthanol() const;
   float getRZeroNH4() const;
   float getRZeroToluene() const;
   float getRZeroAcetone() const;
-  
+
   float getCO(float res) const;
   float getCO2(float res) const;
   float getEthanol(float res) const;
   float getNH4(float res) const;
   float getToluene(float res) const;
   float getAcetone(float res) const;
-  
-  
+
+
   float getCorrectedRZero(float r) const;
   float getCorrectedRZeroCO(float r) const;
   float getCorrectedRZeroEthanol(float r) const;
   float getCorrectedRZeroNH4(float r) const;
   float getCorrectedRZeroToluene(float r) const;
   float getCorrectedRZeroAcetone(float r) const;
-  
+
   float getCorrectedResistance(float t, float h) const;
   float getCorrectionFactor(float t, float h) const;
-  
+
   float getCalibratedCO2(float t, float h) const;
   float getCalibratedCO(float t, float h) const;
   float getCalibratedEthanol(float t, float h) const;
