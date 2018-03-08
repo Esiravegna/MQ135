@@ -22,21 +22,21 @@ v1.0 - First release
 #endif
 
 /// To convert readed resistance into ohms
-#define RLOAD 10.0
+#define RLOAD 10
 /// R0 for AIR
 #define r0Air 1
 /// R0 for CO **measured with 24hrs of exposure**
-#define r0CO 27.09
+#define r0CO 10.13
 /// R0 for CO2 **realized 24 hrs of exposure**
-#define r0CO2 213.93
+#define r0CO2 79.97
 /// R0 for Ethanol **measured with 24hrs of exposure**
-#define r0Ethanol 91.33
+#define r0Ethanol 34.91
 /// R0 for Ammonium **measured with 24hrs of exposure**
-#define r0NH4 62.84
+#define r0NH4 23.49
 /// R0 for Toluene **measured with 24hrs of exposure**
-#define r0Toluene 61.69
+#define r0Toluene 23.06
 /// R0 for Acetone **measured with 24hrs of exposure**
-#define r0Acetone 111.38
+#define r0Acetone 41.00
 /// Parameters Equation for CO
 #define scaleFactorCO 662.9382
 #define exponentCO 4.0241
